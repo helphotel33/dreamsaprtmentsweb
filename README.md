@@ -1,13 +1,12 @@
 # Dream Apartments – web
 
-Web estática (HTML + CSS + JS, sin dependencias ni build).
+Web estática para propietarios (HTML + CSS + JS, sin dependencias ni build).
 
-- `index.html` – Inicio / Propietarios (diseño del dossier)
-- `apartamentos.html` – Huéspedes: reserva tu apartamento
-- `apartamento.html` – Huéspedes: ficha y reserva
-- `img/` – logo, silueta de Sevilla y fotos
-- `js/main.js` – botones (WhatsApp, contador de huéspedes, filtros)
+- `index.html` – página única: gestión de apartamentos turísticos (diseño del dossier) y perfil de Airbnb
+- `img/` – logo, silueta de Sevilla y foto
+- `js/main.js` – formulario "Llamadme" (abre WhatsApp)
+- `vercel.json` – redirige las antiguas páginas de reserva a la portada
 
-Publicación: Vercel (importar el repo, framework "Other", sin build) o GitHub Pages (rama `main`, carpeta raíz).
+Publicada en Vercel (proyecto `dream-apartments`): cada push a `main` se despliega solo.
 
-Pendiente: fotos en alta resolución, logo en SVG, nombres/precios de apartamentos, horarios, política de cancelación, nº VUT, textos legales y motor de reservas.
+Pendiente: fotos en alta resolución, logo en SVG, textos legales (aviso legal y privacidad) y dominio propio.

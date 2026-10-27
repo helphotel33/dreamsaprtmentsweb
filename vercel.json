@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/apartamentos.html", "destination": "/", "permanent": true },
+    { "source": "/apartamento.html", "destination": "/", "permanent": true }
+  ]
+}

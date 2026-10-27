@@ -23,7 +23,7 @@ a{color:#E30613}a:hover{color:#B0040F}
 .card{background:#FFFFFF;border-radius:14px;box-shadow:0 3px 16px rgba(31,43,71,0.08)}
 .ttl{margin:0;font-family:'Jost',sans-serif;font-weight:600;font-size:23px;line-height:1.2;letter-spacing:0.01em;text-transform:uppercase;color:#E30613}
 .ck{display:flex;gap:12px;align-items:flex-start;font-size:16.5px;line-height:1.4;color:#1F2B47}
-@media (max-width:820px){.hide-m{display:none !important}.h1{font-size:44px !important}.stack-m{flex-direction:column !important;align-items:stretch !important}.right-m{text-align:left !important;align-items:flex-start !important}}
+@media (max-width:820px){.hide-m{display:none !important}.h1{font-size:44px !important}.stack-m{flex-direction:column !important;align-items:stretch !important}.stack-m>*{flex-basis:auto !important}.right-m{text-align:left !important;align-items:flex-start !important}}
 </style>
 </head>
 <body>
@@ -37,9 +37,9 @@ a{color:#E30613}a:hover{color:#B0040F}
       657 524 919
     </a>
     <nav style="display: flex; align-items: center; gap: 22px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">
-      <a href="./" style="color: #E30613; text-decoration: none;">Propietarios</a>
-      <a href="#contacto" class="hide-m" style="color: #1F2B47; text-decoration: none;">Contacto</a>
-      <a href="apartamentos.html" style="background: #E30613; color: #FFFFFF; text-decoration: none; padding: 9px 16px; border-radius: 6px;">Reserva tu apartamento</a>
+      <a href="#servicios" class="hide-m" style="color: #1F2B47; text-decoration: none;">Servicios</a>
+      <a href="#airbnb" class="hide-m" style="color: #1F2B47; text-decoration: none;">Nuestro perfil</a>
+      <a href="#contacto" style="background: #E30613; color: #FFFFFF; text-decoration: none; padding: 9px 16px; border-radius: 6px;">Contacto</a>
     </nav>
   </div>
 </div>
@@ -61,7 +61,7 @@ a{color:#E30613}a:hover{color:#B0040F}
     <p style="margin: 0 0 28px; font-size: 19px; line-height: 1.5; color: #1F2B47; max-width: 500px;">Nos ocupamos de todo para que tú solo disfrutes de los resultados. Con un servicio integral, cercano y profesional, tu apartamento turístico estará siempre cuidado, optimizado y en las mejores condiciones.</p>
     <div style="display: flex; flex-wrap: wrap; gap: 12px;">
       <a href="#contacto" style="background: #E30613; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 14px 24px; border-radius: 8px;">Quiero que gestionéis mi apartamento</a>
-      <a href="apartamentos.html" style="background: #FFFFFF; color: #1F2B47; text-decoration: none; font-weight: 600; padding: 14px 24px; border-radius: 8px; box-shadow: 0 3px 16px rgba(31,43,71,0.08);">Busco alojamiento</a>
+      <a href="#airbnb" style="background: #FFFFFF; color: #1F2B47; text-decoration: none; font-weight: 600; padding: 14px 24px; border-radius: 8px; box-shadow: 0 3px 16px rgba(31,43,71,0.08);">Ver nuestro perfil de anfitrión</a>
     </div>
   </div>
   <div style="flex: 1 1 520px; min-width: 0;">
@@ -71,8 +71,23 @@ a{color:#E30613}a:hover{color:#B0040F}
 
 <div class="wrap" style="display: flex; flex-direction: column; gap: 24px; padding-bottom: 32px;">
 
+  <!-- PERFIL AIRBNB -->
+  <section id="airbnb" class="stack-m" style="background: #1F2B47; color: #FFFFFF; border-radius: 14px; padding: 32px 36px; display: flex; gap: 32px; align-items: center;">
+    <span style="flex: 0 0 auto; width: 96px; height: 96px; border-radius: 50%; background: #E30613; display: flex; align-items: center; justify-content: center;">
+      <svg width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.5 1.3 6.5L12 17l-5.9 3.3 1.3-6.5L2.5 9.3l6.6-.8z" fill="#FFFFFF"></path></svg>
+    </span>
+    <div style="flex: 1 1 420px; min-width: 0;">
+      <h2 class="ttl" style="color: #FFFFFF; margin-bottom: 8px;">Nuestro perfil de anfitrión en Airbnb</h2>
+      <p style="margin: 0; font-size: 17px; color: #E6E8EE;">La mejor garantía es la opinión de nuestros huéspedes. Consulta nuestro perfil en Airbnb: valoraciones, reseñas reales y todos los apartamentos que ya gestionamos en Sevilla.</p>
+    </div>
+    <a href="https://www.airbnb.es/p/dreamapartmentssevilla" target="_blank" rel="noopener" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 10px; background: #E30613; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 16px 26px; border-radius: 8px;">
+      Ver perfil en Airbnb
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v6H4V6h6"></path></svg>
+    </a>
+  </section>
+
   <!-- GESTION COMPLETA -->
-  <section class="card" style="padding: 30px 36px;">
+  <section id="servicios" class="card" style="padding: 30px 36px;">
     <div style="display: flex; gap: 18px; align-items: center; margin-bottom: 22px;">
       <svg width="46" height="46" viewBox="0 0 24 24" aria-hidden="true" style="flex: 0 0 auto;"><path d="M12 2.5L1.5 11.2l1.3 1.5L4 11.7V21h6v-6h4v6h6v-9.3l1.2 1 1.3-1.5z" fill="#E30613"></path><path d="M10 21v-6h4v6z" fill="#FFFFFF"></path></svg>
       <div>
@@ -343,7 +358,7 @@ a{color:#E30613}a:hover{color:#B0040F}
     <img src="img/skyline-red.png" alt="" style="height: 58px; width: auto; display: block;">
     <span style="flex: 1 1 auto; height: 2px; background: #E30613; margin-bottom: 4px;"></span>
   </div>
-  <p style="margin: 16px 0 0; text-align: center; font-size: 13px; color: #555D70;">© 2026 Dream Apartments · <a href="#" style="color: #555D70;">Aviso legal</a> · <a href="#" style="color: #555D70;">Privacidad y cookies</a></p>
+  <p style="margin: 16px 0 0; text-align: center; font-size: 13px; color: #555D70;">© 2026 Dream Apartments · <a href="https://www.airbnb.es/p/dreamapartmentssevilla" target="_blank" rel="noopener" style="color: #555D70;">Airbnb</a> · <a href="#" style="color: #555D70;">Aviso legal</a> · <a href="#" style="color: #555D70;">Privacidad y cookies</a></p>
 </footer>
 
 </div>
